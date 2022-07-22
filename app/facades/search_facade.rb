@@ -1,6 +1,6 @@
 class SearchFacade
   class << self
-    def find_members(nation)
+    def get_characters_by_nation(nation)
       SearchService.all_members(nation)
     end
   end
