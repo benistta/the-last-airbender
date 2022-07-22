@@ -14,4 +14,20 @@ class Member
     @photo = data[:photoUrl]
     # require "pry"; binding.pry
   end
+
+  def formatted_allies
+    if @allies.empty?
+      @allies = "None"
+    else
+      @allies.join
+    end
+  end
+
+  def formatted_enemies
+    if @enemies.empty?
+      @enemies = "None"
+    else
+      @enemies.join
+    end
+  end
 end

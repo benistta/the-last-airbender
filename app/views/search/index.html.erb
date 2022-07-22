@@ -1,3 +1,13 @@
 <h1>Total number of people</h1>
 
 <h3>Count: <%=@all_members.members%> </h3>
+<br>
+<h3>First 25 members: <%@first_members.each do |member|%> </h3>
+<h3>Name: <%= member.name%> </h3>
+<h3>Allies: <%= member.affiliation %> </h3>
+<h3>Enemies: <%= member.enemies %> </h3>
+<h3>Affiliation: <%= member.affiliation %> </h3>
+<h3>Photo: <img src=<%= member.photo %>> </h3>
+<br>
+<br>
+<%end%>
